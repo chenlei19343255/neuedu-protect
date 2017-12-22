@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>百度一下</title>
+	<link rel="icon" href="timg.ico">
+	<meta charset="utf-8">
+	<style type="text/css">
+	/*	*{
+			padding: 0px;
+			margin: 0px;
+		}*/
+		body{
+			background-image: url(../images_b/65.jpg);
+			/*background-repeat: no-repeat;
+			background-size: cover;*/
+		}
+		.v1{
+			/*height: 800px;*/
+			margin: 0px 100px;
+		}
+		.v11{
+			width: 300px;
+			margin:0px auto;
+			margin-top:50px; 
+
+		}
+		.v12{
+			width: 600px;
+			margin:20px auto;
+		}
+		li{
+			margin:0px 5px;
+			float: left;
+		}
+		ul:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		#img1{
+			margin: 0px;
+		}
+		.v13{
+			/*border: 1px solid red;*/
+			width: 700px;
+			margin:18px;
+			margin-bottom: 80px;
+		}
+		.v13 #img2{
+			position: relative;
+			top:10px;
+			left: -7px;
+		}
+		.t1{
+			width: 500px;
+			height: 30px;
+			margin: 0px;
+			padding: 0px;
+			font-size: 15px;
+			size: 20;
+			border: 0px;
+		}
+		.t2{
+			height: 40px;
+			width: 90px;
+		}
+		.v14{
+			background-color: #E6E4E3;
+			width: 720px;
+			/*ie兼容*/
+			filter:alpha(Opacity=50);
+			/*火狐兼容*/
+			-moz-opacity:0.6;
+			/*谷歌*/
+			opacity: 0.5;
+			position: relative;
+			left: -50px;
+			margin-top:0px; 
+			margin: 0px auto;
+		}
+		.v15{
+			margin: 0px auto;
+			margin-top:200px; 
+			width: 500px;
+			text-align: center;
+			font-size:20px;
+			color: white;
+		}
+		td{
+			padding: 0px;
+		}
+		a{
+			color: white;
+			text-decoration: none;
+		}
+		/*a:hover{
+			border-bottom: 1px solid red;
+		}*/
+	</style>
+	<script type="text/javascript">
+		function find(){
+			var msg=document.getElementById("t1").value;
+			if(msg==""){
+				
+				return;
+			}
+			// location.href="http://www.baidu.com/s?wd="+msg;
+			open("http://www.baidu.com/s?wd="+msg);
+		}
+        document.onkeydown = function(evt){ 
+		var evt = window.event?window.event:evt; 
+		if(evt.keyCode==13){ 
+		find(); //如果按下的是回车键，则执行对应的js函数 
+		} 
+} 
+	</script>
+</head>
+<body >
+	<div class="v1">
+		<div class="v11">
+			<img src="../images_b/logo_white.png" id="img1">
+		</div>
+		<div class="v12">
+			<ul style="list-style:none;">
+				<li><a href="http://news.baidu.com/" >新闻</a></li>
+				<li><a href="https://www.baidu.com/" >网页</a></li>
+				<li><a href="https://tieba.baidu.com/index.html" >贴吧</a></li>
+				<li><a href="https://zhidao.baidu.com/" >知道</a></li>
+				<li><a href="http://music.baidu.com/" >音乐</a></li>
+				<li><a href="https://image.baidu.com" >图片</a></li>
+				<li><a href="http://v.baidu.com/" >视频</a></li>
+				<li><a href="http://map.baidu.com/" >地图</a></li>
+				<li><a href="https://baike.baidu.com/" >百科</a></li>
+				<li><a href="https://wenku.baidu.com/" >文库</a></li>
+				<li><a href="https://www.baidu.com/more/" >更多</a></li>
+			</ul>
+		<div/>
+		<div class="v13">
+			<input type="text" name="" class="t1" id="t1" maxlength="20" size="10">
+			<a href="javascript:find();"><img src="../images_b/bd.png" height="30px;" id="img2"></a>
+			<!-- <input type="button" name="" value="百度一下" class="t2" id="t2"  -->
+		<!-- 		onclick="find();" 
+			> -->
+		</div>
+		<div class="v14">
+			<table>
+					<tr>
+						<td>
+							<a href="https://www.taobao.com/">
+								<img src="../images_b/101.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.jd.com/">
+								<img src="../images_b/102.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.12306.cn/mormhweb/">
+								<img src="../images_b/103.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.4399.com/">
+								<img src="../images_b/104.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.youku.com/">
+								<img src="../images_b/106.png">
+							</a>
+						</td>
+						<td>
+							<a href="https://qzone.qq.com/">
+								<img src="../images_b/107.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://www.iqiyi.com/">
+								<img src="../images_b/108.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://weibo.com/">
+								<img src="../images_b/109.png">
+							</a>
+						</td>
+						<td>
+							<a href="https://weixin.qq.com/">
+								<img src="../images_b/110.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://sy.58.com/">
+								<img src="../images_b/111.png">
+							</a>
+						</td>
+						<td>
+							<a href="https://www.mi.com/">
+								<img src="../images_b/112.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.autohome.com.cn/">
+								<img src="../images_b/113.png">
+							</a>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<a href="http://ts.zhaopin.com/jump/index.html">
+								<img src="../images_b/114.png">
+							</a>
+						</td>
+						<td>
+							<a href="https://www.vip.com/">
+								<img src="../images_b/115.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.ctrip.com/">
+								<img src="../images_b/116.png">
+							</a>
+						</td>
+						<td>
+							<a href="https://www.douban.com/">
+								<img src="../images_b/117.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.ifeng.com/">
+								<img src="../images_b/12.png">
+							</a>
+						</td>
+						<td>
+							<a href="http://www.163.com/">
+								<img src="../images_b/20.png">
+							</a>
+						</td>
+					</tr>
+				</table>	
+		</div>
+		<div class="v15">
+			
+				&copy;2014 Baidu 使用百度前必读 京ICP证030173号
+			
+		</div>
+	</div>
+</body>
+</html>
